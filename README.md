@@ -6,6 +6,8 @@
 
 Use the TLS OV Chipkaart API to get transactions done using the OV chipkaart.
 
+Example project: [koesie10/ovchip](https://github.com/koesie10/ovchip)
+
 ## Install
 
 To install, use `go get`:
