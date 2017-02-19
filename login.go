@@ -1,3 +1,4 @@
+// Use the TLS OV Chipkaart API to get transactions done using the OV chipkaart.
 package ovchipapi
 
 import (
