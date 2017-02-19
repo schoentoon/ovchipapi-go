@@ -1,5 +1,7 @@
 # ovchipapi
 
+[![GoDoc](https://godoc.org/github.com/koesie10/ovchipapi?status.svg)](https://godoc.org/github.com/koesie10/ovchipapi)
+
 ## Description
 
 Use the TLS OV Chipkaart API to get transactions done using the OV chipkaart.
