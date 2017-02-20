@@ -20,3 +20,7 @@ func (t *OVTime) UnmarshalJSON(b []byte) error {
 
 	return nil
 }
+
+func (t OVTime) String() string {
+	return time.Time(t).String()
+}

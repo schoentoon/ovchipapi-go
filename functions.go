@@ -51,9 +51,16 @@ func postAndResponse(url string, values url.Values, v interface{}) error {
 
 	if responseCode != 200 {
 		var output string
-		err = json.Unmarshal(*resp["o"], &output)
-		if err != nil {
-			return err
+		if resp["o"] != nil {
+			err = json.Unmarshal(*resp["o"], &output)
+			if err != nil {
+				return err
+			}
+		} else if resp["e"] != nil {
+			err = json.Unmarshal(*resp["e"], &output)
+			if err != nil {
+				return err
+			}
 		}
 
 		return fmt.Errorf("ovchipapi: API did not return successful response: %s", output)

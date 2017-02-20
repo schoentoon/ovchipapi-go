@@ -8,6 +8,7 @@ const loginUrl = "https://login.ov-chipkaart.nl/oauth2/token"
 const api2BaseUrl = "https://api2.ov-chipkaart.nl/femobilegateway/v1"
 const authorizeUrl = api2BaseUrl + "/api/authorize"
 const cardsUrl = api2BaseUrl + "/cards/list"
+const cardUrl = api2BaseUrl + "/card/"
 const transactionsUrl = api2BaseUrl + "/transactions"
 
 type Locale string
