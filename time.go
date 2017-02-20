@@ -2,6 +2,7 @@ package ovchipapi
 
 import (
 	"encoding/json"
+	"math"
 	"time"
 )
 
@@ -16,7 +17,14 @@ func (t *OVTime) UnmarshalJSON(b []byte) error {
 	if err := json.Unmarshal(b, &millis); err != nil {
 		return err
 	}
-	*t = OVTime(time.Unix(0, millis*int64(time.Millisecond)))
+
+	// we can throw away the millis part of the time
+	// because the server just returns whatever
+	// the current millis are, so we only have
+	// accuracy to the second
+	unix := int64(math.Floor(float64(millis) / 1000))
+
+	*t = OVTime(time.Unix(unix, 0))
 
 	return nil
 }
