@@ -1,24 +1,24 @@
-# ovchipapi
+# ovchipapi-go
 
-[![GoDoc](https://godoc.org/github.com/koesie10/ovchipapi?status.svg)](https://godoc.org/github.com/koesie10/ovchipapi)
+[![GoDoc](https://godoc.org/github.com/OVChip/ovchipapi-go?status.svg)](https://godoc.org/github.com/OVChip/ovchipapi-go)
 
 ## Description
 
 Use the TLS OV Chipkaart API to get transactions done using the OV chipkaart.
 
-Example project: [koesie10/ovchip](https://github.com/koesie10/ovchip)
+Example project: [OVChip/ovchip-cli-go](https://github.com/OVChip/ovchip-cli-go)
 
 ## Install
 
 To install, use `go get`:
 
 ```bash
-$ go get -d github.com/koesie10/ovchipapi
+$ go get -d github.com/OVChip/ovchipapi-go
 ```
 
 ## Contribution
 
-1. Fork ([https://github.com/koesie10/ovchipapi/fork](https://github.com/koesie10/ovchipapi/fork))
+1. Fork ([https://github.com/OVChip/ovchipapi-go/fork](https://github.com/OVChip/ovchipapi-go/fork))
 1. Create a feature branch
 1. Commit your changes
 1. Rebase your local changes against the master branch
