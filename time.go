@@ -8,10 +8,6 @@ import (
 
 type OVTime time.Time
 
-func (t OVTime) MarshalJSON() ([]byte, error) {
-	return []byte(string(time.Time(t).Unix() * 1000)), nil
-}
-
 func (t *OVTime) UnmarshalJSON(b []byte) error {
 	var millis int64
 	if err := json.Unmarshal(b, &millis); err != nil {
